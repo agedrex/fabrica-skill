@@ -1,0 +1,25 @@
+{
+  "name": "fabrica",
+  "version": "0.1.0",
+  "description": "El método de trabajo de La Fábrica de Agedrex: Etapas, FRDs, Blueprints y Work Orders, con ejecución repetible de WOs por MCP.",
+  "author": {
+    "name": "Agedrex"
+  },
+  "homepage": "https://github.com/agedrex/fabrica-skill",
+  "keywords": [
+    "la-fabrica",
+    "agedrex",
+    "requisitos",
+    "blueprints",
+    "work-orders",
+    "mcp"
+  ],
+  "skills": "./skills",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "La Fábrica",
+    "shortDescription": "El método de trabajo de La Fábrica de Agedrex: Etapas, FRDs, Blueprints y Work Orders, con ejecución repetible de WOs por MCP.",
+    "category": "developer-tools",
+    "defaultPrompt": "Usá el método de La Fábrica para planificar y ejecutar el Work Order actual."
+  }
+}
