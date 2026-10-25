@@ -40,7 +40,7 @@ Todas aceptan `project` para elegir el proyecto y exigen un token con acceso a �
 | Herramienta | Para qué |
 |---|---|
 | `sf_board` | Panorama del proyecto: etapas, WOs por estado y actividad reciente. Abrí la sesión con esta. |
-| `sf_stage` | Crear, actualizar, cerrar o reabrir una Etapa. Solo Owners. |
+| `sf_stage` | CRUD de Etapas: `list` y `read` (cualquier miembro); `create`, `update` (con `clear_starts_on`/`clear_ends_on` para borrar fechas), `delete`, `close_planning` y `reopen_planning` (solo Owners). `delete` falla si la Etapa tiene documentos, WOs o datos financieros; sus fases quedan sueltas. |
 | `sf_search`, `sf_read`, `sf_tree` | Buscar, leer por referencia e inspeccionar el árbol FRD → Blueprint → WO. |
 | `sf_write` | Crear o actualizar FRDs, Blueprints y Work Orders. Escribe directo. Cualquier miembro del proyecto. |
 | `sf_pair` | Enlazar (`action="pair"`) o desenlazar (`action="unpair"`) un FRD feature con su Feature Blueprint (`satisfies`). Cualquier miembro. |
